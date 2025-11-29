@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+    //Criação de Variáveis
+
     char estado1, estado2;              // Letra de A a H
     char codigo1[4], codigo2[4];        // Código Ex: A03
     char Cidade1[50],Cidade2[50];       // Nome das cidades
@@ -77,7 +79,7 @@ int main() {
 
     printf("\nCadastro concluido com sucesso!\n"); //Todas as informações passadas
 
-    //Exibição da Primeira Carta Trunfo
+    //Exibição de dados da Primeira Carta Trunfo
 
     printf("\n CARTA nº1 \n");
     printf("Estado: %c\n", estado1);
@@ -90,7 +92,7 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
     printf("PIB per Capita: R$%.2f\n", capita1);
 
-    //Exibição da Segunda Carta Trunfo
+    //Exibição de dados da Segunda Carta Trunfo
 
     printf("\n CARTA nº2 \n");
     printf("Estado: %c\n", estado2);
@@ -103,13 +105,17 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: R$%.2f\n", capita2);
 
+    //Exibição das Condições
+    
     printf("\n========COMPARAÇÃO DE CARTAS: %s / %s =========\n", Cidade1, Cidade2);
+
+    //Critérios de comparação, para mudar o critério é só retirar o "/**/"
     if (populacao1 > populacao2){
         printf("Carta %s ganhou em População!\n", Cidade1);
     } else {
         printf("Carta %s ganhou em População!\n",Cidade2);
     }
-    if (area1 > area2){
+    /*if (area1 > area2){
         printf("Carta %s ganhou contendo mais Expansão Territorial!\n",Cidade1);
     } else {
         printf("Carta %s ganhou contendo mais Expansão Territorial\n", Cidade2);
@@ -133,7 +139,7 @@ int main() {
         printf("Carta %s ganhou! Pois teve o maior PIB per capita!\n", Cidade1);
     } else {
         printf("Carta %s ganhou! Pois teve o maior PIB per capita!\n", Cidade2);
-    }
+    }*/
     
 
     
